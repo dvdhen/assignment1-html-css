@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+.home-page {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("./assets/img4.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Paytone One', sans-serif;
+}
+
+/* ***********
+Nav
+*************/
+
+.nav {
+    margin: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    /* background-color: aqua; */
+}
+
+.logo {
+    width: 100px;
+}
+.nav-links {
+    display: flex;
+    gap: 50px;
+}
+.nav-links li a {
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 500;
+    color: #edbb30;
+}
+.nav-links li a:hover {
+    color: #dba104;
+    text-decoration: underline;
+    font-weight: 800;
+    transition: 0.2s ease-in-out; 
+}
+
+.nav-btn {
+    padding: 10px 35px;
+    background-color: rgb(224, 78, 73);
+    border: none;
+    cursor: pointer;
+}
+.nav-btn>a {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+/* **************
+Home page main
+***************/
+
+.home-page-main {
+    margin: 0 32px;
+    height: 85vh;;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.home-page-center {
+    text-align: center;
+    margin-top: 48px;
+}
+
+.home-page-title {
+    font-size: 90px;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 35px;
+    text-transform: capitalize;
+    font-weight: 900;
+    color: #edbb30;
+    
+}
+
+.home-page-btn {
+    padding: 20px 55px;
+    background-color: #e04e49;
+    border: none;  
+    cursor: pointer;
+}
+.home-page-btn>a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.home-page-btn:hover, .nav-btn:hover {
+background-color: #302c2c94;
+border: 1px solid #e04e49;
+transition: 0.2s ease-in-out;
+}
+
+/* ********************** 
+Scroll image
+* ********************** */
+
+.home-page-scroll-logo {
+    position: absolute;
+    bottom: 32px;
+    right: 0;
+}
+
+.home-page-scroll-img {
+    width: 100px;
+    animation: bounce 2s infinite;
+}
+.home-page-scroll-img:hover {
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 5px, 0);
+    }
+}
